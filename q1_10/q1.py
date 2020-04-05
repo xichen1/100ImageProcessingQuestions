@@ -9,8 +9,8 @@ def rgb2bgr(img):
 	img[:,:,1] = green
 	img[:,:,2] = blue
 	return img
-img = cv2.imread("imori.jpg")
-res = rgb2bgr(img)
+img_ = cv2.imread("imori.jpg")
+res = rgb2bgr(img_)
 cv2.imwrite("result1.jpg",res)
 cv2.imshow("result", res)
 cv2.waitKey(0)

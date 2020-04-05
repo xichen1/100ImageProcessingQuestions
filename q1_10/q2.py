@@ -5,9 +5,7 @@ def grayscale(img):
     g = img[:,:,1]
     r = img[:,:,2]
     result = 0.2126*r + 0.7152*g + 0.0722*b
-    print(result[0])
     result = result.astype(np.uint8) # convert the float to uint8 because cv2 cannot imwrite float img
-    print(result[0])
     return result
 
 def main():
